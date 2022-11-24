@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		763D3F95292E93A300E5641D /* GloriaHallelujah-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 763D3F94292E93A300E5641D /* GloriaHallelujah-Regular.ttf */; };
 		763FB38C292D34BE00D686C2 /* ZusanIOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763FB38B292D34BE00D686C2 /* ZusanIOSApp.swift */; };
 		763FB38E292D34BE00D686C2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763FB38D292D34BE00D686C2 /* ContentView.swift */; };
 		763FB390292D34BF00D686C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 763FB38F292D34BF00D686C2 /* Assets.xcassets */; };
@@ -14,6 +15,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		763D3F94292E93A300E5641D /* GloriaHallelujah-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "GloriaHallelujah-Regular.ttf"; path = "../../../../../Downloads/Gloria_Hallelujah/GloriaHallelujah-Regular.ttf"; sourceTree = "<group>"; };
+		763D3F96292E94CB00E5641D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		763FB388292D34BE00D686C2 /* ZusanIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZusanIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		763FB38B292D34BE00D686C2 /* ZusanIOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZusanIOSApp.swift; sourceTree = "<group>"; };
 		763FB38D292D34BE00D686C2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -33,6 +36,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		763D3F93292E930A00E5641D /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				763D3F94292E93A300E5641D /* GloriaHallelujah-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		763FB37F292D34BE00D686C2 = {
 			isa = PBXGroup;
 			children = (
@@ -52,6 +63,8 @@
 		763FB38A292D34BE00D686C2 /* ZusanIOS */ = {
 			isa = PBXGroup;
 			children = (
+				763D3F96292E94CB00E5641D /* Info.plist */,
+				763D3F93292E930A00E5641D /* Fonts */,
 				763FB38B292D34BE00D686C2 /* ZusanIOSApp.swift */,
 				763FB38D292D34BE00D686C2 /* ContentView.swift */,
 				763FB38F292D34BF00D686C2 /* Assets.xcassets */,
@@ -128,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				763FB394292D34BF00D686C2 /* Preview Assets.xcassets in Resources */,
+				763D3F95292E93A300E5641D /* GloriaHallelujah-Regular.ttf in Resources */,
 				763FB390292D34BF00D686C2 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -269,6 +283,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ZusanIOS/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -279,7 +294,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
@@ -307,6 +322,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ZusanIOS/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -317,7 +333,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
