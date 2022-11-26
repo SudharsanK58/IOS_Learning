@@ -8,46 +8,33 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var Label_text = "Default value"
+    @State private var textInput = ""
+    @State private var TextEditor_text = "Enter hereß"
     var body: some View {
-        ZStack {
-            Color.white.ignoresSafeArea()
-            VStack {
-                Image("NoInternet_Error")
-                    .resizable()
-                        .frame(width: 350.0, height: 350.0)
-                Text("No internet")
-                    .font(.title)
-                    .foregroundColor(Color.black)
-                    .bold()
-                    .padding(.bottom, 37.0)
-                Text("Please check your internet connection or try again later")
-                    .font(.custom("GloriaHallelujah", size: 25))
-                    .padding()
-                    .foregroundColor(Color.black)
-                    .multilineTextAlignment(.center)
-                    
-                Button(action: {}) {
-                    HStack {
-                        Image(systemName: "plus.bubble.fill")
-                        Text("Retry")
-                            .font(.title)
-                        
-                       
-                    }
+        VStack{
+            HeaderView(Label_text2: $Label_text)
+            TextField(TextEditor_text,text: $textInput)
+                .textFieldStyle(.roundedBorder)
+            Button(action:{
+                if textInput == "" {
+                    TextEditor_text = "Enter the correct value"
+                }else{
+                    print(textInput)
+                    Label_text = textInput
+                    textInput = ""
                 }
-                .padding()
-                    .foregroundColor(.white)
-                    .font(.largeTitle)
-                    .background(
-                        LinearGradient(gradient: Gradient(colors: [.red, .blue, .blue]), startPoint: .leading, endPoint: .trailing)
-                    )
-                    .cornerRadius(40)
-                    .frame(width: 200.0, height: 150.0)
-
-                    
-            }
+            },label: {Text("Press here")})
+            Spacer()
         }
-        .accentColor(Color.black)
+    }
+}
+
+struct HeaderView: View{
+    @Binding var Label_text2: String
+    var body: some View{
+        Text(Label_text2)
+            .padding(10)
     }
 }
 
