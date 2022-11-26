@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		763D3F95292E93A300E5641D /* GloriaHallelujah-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 763D3F94292E93A300E5641D /* GloriaHallelujah-Regular.ttf */; };
+		763EAC292931F02300D4239F /* ApplicationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763EAC282931F02300D4239F /* ApplicationData.swift */; };
 		763FB38C292D34BE00D686C2 /* ZusanIOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763FB38B292D34BE00D686C2 /* ZusanIOSApp.swift */; };
 		763FB38E292D34BE00D686C2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763FB38D292D34BE00D686C2 /* ContentView.swift */; };
 		763FB390292D34BF00D686C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 763FB38F292D34BF00D686C2 /* Assets.xcassets */; };
@@ -17,6 +18,7 @@
 /* Begin PBXFileReference section */
 		763D3F94292E93A300E5641D /* GloriaHallelujah-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "GloriaHallelujah-Regular.ttf"; path = "../../../../../Downloads/Gloria_Hallelujah/GloriaHallelujah-Regular.ttf"; sourceTree = "<group>"; };
 		763D3F96292E94CB00E5641D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		763EAC282931F02300D4239F /* ApplicationData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationData.swift; sourceTree = "<group>"; };
 		763FB388292D34BE00D686C2 /* ZusanIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZusanIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		763FB38B292D34BE00D686C2 /* ZusanIOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZusanIOSApp.swift; sourceTree = "<group>"; };
 		763FB38D292D34BE00D686C2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				763D3F96292E94CB00E5641D /* Info.plist */,
 				763D3F93292E930A00E5641D /* Fonts */,
 				763FB38B292D34BE00D686C2 /* ZusanIOSApp.swift */,
+				763EAC282931F02300D4239F /* ApplicationData.swift */,
 				763FB38D292D34BE00D686C2 /* ContentView.swift */,
 				763FB38F292D34BF00D686C2 /* Assets.xcassets */,
 				763FB391292D34BF00D686C2 /* ZusanIOS.entitlements */,
@@ -153,6 +156,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				763EAC292931F02300D4239F /* ApplicationData.swift in Sources */,
 				763FB38E292D34BE00D686C2 /* ContentView.swift in Sources */,
 				763FB38C292D34BE00D686C2 /* ZusanIOSApp.swift in Sources */,
 			);

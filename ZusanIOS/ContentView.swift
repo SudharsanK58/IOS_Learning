@@ -1,46 +1,30 @@
-//
-//  ContentView.swift
-//  ZusanIOS
-//
-//  Created by Sudhar Zan on 22/11/22.
-//
-
 import SwiftUI
-
+class ContentViewData: ObservableObject {
+    @Published var titleInput: String = ""
+    @Published var authorInput: String = ""
+}
 struct ContentView: View {
-    @State private var Label_text = "Default value"
-    @State private var textInput = ""
-    @State private var TextEditor_text = "Enter hereß"
+    @ObservedObject var contentData = ContentViewData()
+    @EnvironmentObject var appData: ApplicationData
     var body: some View {
-        VStack{
-            HeaderView(Label_text2: $Label_text)
-            TextField(TextEditor_text,text: $textInput)
+        VStack (spacing: 8) {
+            Text (appData.userData.header)
+                .padding (10)
+            TextField("Insert Title", text: $contentData.titleInput)
                 .textFieldStyle(.roundedBorder)
-            Button(action:{
-                if textInput == "" {
-                    TextEditor_text = "Enter the correct value"
-                }else{
-                    print(textInput)
-                    Label_text = textInput
-                    textInput = ""
-                }
-            },label: {Text("Press here")})
-            Spacer()
-        }
+            TextField("Insert Author", text: $contentData.authorInput)
+                .textFieldStyle(.roundedBorder)
+            Button(action: {
+                appData.userData.book.title = contentData.titleInput
+                appData.userData.book.author = contentData.authorInput
+            }, label: { Text ("Save") })
+            Spacer ()
+        }.padding()
     }
 }
-
-struct HeaderView: View{
-    @Binding var Label_text2: String
-    var body: some View{
-        Text(Label_text2)
-            .padding(10)
-    }
-}
-
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
-        
+            .environmentObject(ApplicationData())
     }
 }
